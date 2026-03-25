@@ -114,7 +114,7 @@ section {
     background-color: #078080;
     color: #fffffe;
     padding: 16px 20px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     border-radius: 6px;
     cursor: pointer;
@@ -185,7 +185,7 @@ iframe {
 .footer__text {
     font-size: 20px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 /**** Responsive design version mobile ****/
