@@ -1,0 +1,189 @@
+/**** Police Muli import ****/
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: "Muli", sans-serif;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: li;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Muli", sans-serif;
+    padding-inline: 20px;
+    font-size: 18px;
+}
+
+/**** header, footer ****/
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: #fffffe;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/**** main ****/
+
+.main__content {
+    width: 100%;
+    max-width: 767px;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f5f2;
+    color: #232323;
+    border-radius: 8px;
+}
+
+/**** section ****/
+
+section {
+    padding: 20px;
+    width: 100%;
+}
+
+/**** section presentation ****/
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation__title {
+    font-size: 30px;
+}
+
+.presentation__subtitle {
+    font-size: 24px;
+}
+
+.presentation__title,
+.presentation__subtitle {
+    margin-bottom: 30px;
+}
+
+.presentation__title,
+.presentation__subtitle,
+.btn {
+    text-align: center;
+}
+
+.btn {
+    background-color: #078080;
+    color: #fffffe;
+    padding: 16px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #f45d48;
+}
+
+/**** section meal__result ****/
+
+.meal__description {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+ol {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+}
+
+ol li::before {
+    content: counter(li) ".";
+    color: #f45d48;
+    margin-right: 8px;
+    font-weight: 700;
+}
+
+ol li {
+    margin-bottom: 10px;
+    counter-increment: li;
+}
+
+.column__title p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.column__title h4 {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 6px;
+}
+
+/**** footer ****/
+
+.footer__text {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
