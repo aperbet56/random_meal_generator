@@ -1,6 +1,7 @@
 // Récupération des éléments HTML5
 const btn = document.querySelector(".btn");
 const mealResult = document.querySelector(".meal__result");
+const footerYear = document.querySelector(".footer__year");
 
 // Event listener
 btn.addEventListener("click", () => {
@@ -57,3 +58,11 @@ const displayMeal = (meal) => {
 
   mealResult.innerHTML = newInnerHTML;
 };
+
+// Récupération de la date actuelle
+const today = new Date();
+// Récupération de  l'année en cours
+const year = today.getFullYear();
+console.log(year);
+// Affichage dynamique de l'année
+footerYear.textContent = `${year}`;
