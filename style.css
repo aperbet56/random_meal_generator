@@ -187,3 +187,20 @@ iframe {
     text-align: center;
     font-weight: 500;
 }
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
+    body {
+        padding-inline: 15px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    img,
+    iframe {
+        height: 300px;
+    }
+}
