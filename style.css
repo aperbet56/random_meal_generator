@@ -133,11 +133,15 @@ section {
     flex-direction: column;
 }
 
-img {
+img,
+iframe {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    height: 320px;
     border-radius: 6px;
+}
+
+img {
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -172,12 +176,6 @@ ol li {
 
 .column__title h4 {
     margin-top: 20px;
-}
-
-iframe {
-    width: 100%;
-    height: 320px;
-    border-radius: 6px;
 }
 
 /**** footer ****/
