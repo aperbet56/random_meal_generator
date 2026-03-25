@@ -1,8 +1,8 @@
 ## RANDOM MEAL GENERATOR
 
-![preview] (img/preview-1.png)
+![preview](img/preview-1.png)
 
-![preview] (img/preview-2.png)
+![preview](img/preview-2.png)
 
 ## Le challenge
 
