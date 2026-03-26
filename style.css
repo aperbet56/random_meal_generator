@@ -12,7 +12,8 @@
     box-sizing: border-box;
 }
 
-button {
+button,
+iframe {
     border: none;
     outline: none;
     font-size: "Muli", sans-serif;
