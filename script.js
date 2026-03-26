@@ -3,16 +3,18 @@ const btn = document.querySelector(".btn");
 const mealResult = document.querySelector(".meal__result");
 const footerYear = document.querySelector(".footer__year");
 
-// Event listener
-btn.addEventListener("click", () => {
-  // fetch data
-  fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+// async function fetchData
+const fetchData = async () => {
+  await fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then((res) => res.json())
     .then((res) => {
-      displayMeal(res.meals[0]);
+      displayMeal(res.meals[0]); // function displayMeal(res.meals[0]) call
     })
     .catch((err) => console.error(err));
-});
+};
+
+// Event listener and function call
+btn.addEventListener("click", fetchData);
 
 // Function displayMeal
 const displayMeal = (meal) => {
@@ -59,10 +61,10 @@ const displayMeal = (meal) => {
   mealResult.innerHTML = newInnerHTML;
 };
 
-// Récupération de la date actuelle
+// Retrieving the current date
 const today = new Date();
-// Récupération de  l'année en cours
+// Retrieving the current year
 const year = today.getFullYear();
 console.log(year);
-// Affichage dynamique de l'année
+// Dynamic display of the year
 footerYear.textContent = `${year}`;
