@@ -1,4 +1,4 @@
-## RANDOM MEAL GENERATOR
+## RANDOM MEAL GENERATOR 🍔
 
 ![preview](img/preview-1.png)
 
@@ -6,7 +6,7 @@
 
 ## Le challenge
 
-Création du site web : random meal generator en HTML5, CSS3 et JavaScript.
+Création du site web : random meal generator en HTML5, CSS3 et JavaScript. Cliquez sur le bouton "Get Meal" pour voir apparaître la photo, les ingrédients, la recette et la vidéo (s'il y en a une) d'un plat choisi de manière aléatoire.
 
 ## Démonstration
 
