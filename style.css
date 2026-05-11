@@ -134,6 +134,12 @@ section {
     flex-direction: column;
 }
 
+.meal__description__title {
+    background-color: #fffffe;
+    padding: 16px 12px;
+    border-radius: 6px;
+}
+
 img,
 iframe {
     width: 100%;
