@@ -35,14 +35,15 @@ const displayMeal = (meal) => {
   // HTML structure
   const newInnerHTML = `
 			<div class="meal__description">
+      <h4 class= "meal__description__title">${meal.strMeal}</h4>
 				<img src="${meal.strMealThumb}" alt="Meal Image">
-				<h4>Ingredients:</h4>
+				<h4>Ingredients</h4>
 				<ol>
 					${ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
 				</ol>
 			</div>
             <div class="column__title">
-				<h4>${meal.strMeal}</h4>
+				<h4>Instructions</h4>
 				<p>${meal.strInstructions}</p>
 			</div>
 		${
@@ -65,6 +66,6 @@ const displayMeal = (meal) => {
 const today = new Date();
 // Retrieving the current year
 const year = today.getFullYear();
-console.log(year);
+//console.log(year);
 // Dynamic display of the year
 footerYear.textContent = `${year}`;
